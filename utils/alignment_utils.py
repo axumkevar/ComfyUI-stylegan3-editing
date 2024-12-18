@@ -5,7 +5,7 @@ import numpy as np
 import scipy.ndimage
 from PIL import Image
 
-from utils.common import make_transform
+from custom_nodes.ComfyUI_stylegan3_editing.utils.common import make_transform
 
 
 def get_landmark(filepath, detector, predictor):

@@ -1,8 +1,8 @@
 import torch
 import numpy as np
 
-from models.stylegan3.networks_stylegan3 import Generator
-from utils.common import make_transform
+from custom_nodes.ComfyUI_stylegan3_editing.models.stylegan3.networks_stylegan3 import Generator
+from custom_nodes.ComfyUI_stylegan3_editing.utils.common import make_transform
 
 
 class Expander:

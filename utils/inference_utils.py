@@ -5,14 +5,14 @@ import dataclasses
 import torch
 from torchvision import transforms
 
-from configs.paths_config import model_paths
-from inversion.models.e4e3 import e4e
-from inversion.models.psp3 import pSp
-from inversion.options.e4e_train_options import e4eTrainOptions
-from inversion.options.test_options import TestOptions
-from inversion.options.train_options import TrainOptions
-from models.stylegan3.model import SG3Generator
-from utils.model_utils import ENCODER_TYPES
+from custom_nodes.ComfyUI_stylegan3_editing.configs.paths_config import model_paths
+from custom_nodes.ComfyUI_stylegan3_editing.inversion.models.e4e3 import e4e
+from custom_nodes.ComfyUI_stylegan3_editing.inversion.models.psp3 import pSp
+from custom_nodes.ComfyUI_stylegan3_editing.inversion.options.e4e_train_options import e4eTrainOptions
+from custom_nodes.ComfyUI_stylegan3_editing.inversion.options.test_options import TestOptions
+from custom_nodes.ComfyUI_stylegan3_editing.inversion.options.train_options import TrainOptions
+from custom_nodes.ComfyUI_stylegan3_editing.models.stylegan3.model import SG3Generator
+from custom_nodes.ComfyUI_stylegan3_editing.utils.model_utils import ENCODER_TYPES
 
 IMAGE_TRANSFORMS = transforms.Compose([
     transforms.Resize((256, 256)),
